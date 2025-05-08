@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Reading the player's inputs
     public void Update()
-    {                               //GetAxisRaw stops is either go or stop, getAxis would smooth the movement
+    {                               //GetAxisRaw is either go or stop, getAxis would smooth the movement
         direction = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
     }
 
