@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public bool playerCanMove = true;
     public float speed = 10;
     Rigidbody2D rb;
     Vector2 direction;
@@ -14,7 +15,9 @@ public class PlayerMovement : MonoBehaviour
     // Update objects
     public void FixedUpdate()
     {
-        rb.MovePosition(rb.position + (direction * speed * Time.deltaTime));
+        if (playerCanMove) {
+            rb.MovePosition(rb.position + (direction * speed * Time.deltaTime));
+        }
     }
 
     // Reading the player's inputs
