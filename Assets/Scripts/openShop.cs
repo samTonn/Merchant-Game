@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class openDoor : MonoBehaviour
+public class openShop : MonoBehaviour
 {
     public bool isOverDoor = false;
     public GameObject shopUI;
